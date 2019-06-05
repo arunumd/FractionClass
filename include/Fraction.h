@@ -243,7 +243,7 @@ inline Fraction<T1> operator*=(Fraction<T1> &first, const Fraction<T1> &second) 
  * @return Product of LHS and RHS
  */
 template<typename T1>
-inline Fraction<T1> operator*(T1 first, const Fraction<T1> &second) {
+inline Fraction<T1> operator*(const T1 first, const Fraction<T1> &second) {
     Fraction<T1> tmp(first * second.get_numerator(), second.get_denominator());
     return tmp;
 }
@@ -270,7 +270,7 @@ inline Fraction<T1> operator*=(T1 first, const Fraction<T1> &second) {
  * @return Product of LHS and RHS
  */
 template<typename T1>
-inline Fraction<T1> operator*(const Fraction<T1> &second, T1 first) {
+inline Fraction<T1> operator*(const Fraction<T1> &second, const T1 first) {
     Fraction<T1> tmp(first * second.get_numerator(), second.get_denominator());
     return tmp;
 }
@@ -326,7 +326,7 @@ inline Fraction<T1> operator/=(Fraction<T1> &first, const Fraction<T1> &second) 
  * @return Division of LHS by RHS
  */
 template<typename T1>
-inline Fraction<T1> operator/(T1 first, const Fraction<T1> &second) {
+inline Fraction<T1> operator/(const T1 first, const Fraction<T1> &second) {
     Fraction<T1> tmp(first * second.get_denominator(), second.get_numerator());
     return tmp;
 }
@@ -353,7 +353,7 @@ inline Fraction<T1> operator/=(T1 first, const Fraction<T1> &second) {
  * @return Division of LHS by RHS
  */
 template<typename T1>
-inline Fraction<T1> operator/(const Fraction<T1> &second, T1 first) {
+inline Fraction<T1> operator/(const Fraction<T1> &second, const T1 first) {
     Fraction<T1> tmp(second.get_numerator(), second.get_denominator() * first);
     return tmp;
 }
@@ -366,10 +366,96 @@ inline Fraction<T1> operator/(const Fraction<T1> &second, T1 first) {
  * @return LHS as the division of LHS by RHS
  */
 template<typename T1>
-inline Fraction<T1> operator/=(const Fraction<T1> &second, T1 first) {
+inline Fraction<T1> operator/=(const Fraction<T1> &second, const T1 first) {
     Fraction<T1> tmp(second.get_numerator(), second.get_denominator() * first);
     first = tmp;
     return first;
+}
+
+// Greater than
+template<typename T1>
+inline bool operator>(const Fraction<T1> &second, const T1 first) {
+    if (second.get_denominator() == 1) {
+        return (second.get_numerator() > first);
+    } else {
+        return (second.get_numerator() > first * second.get_denominator());
+    }
+}
+
+template<typename T1>
+inline bool operator>(const T1 first, const Fraction<T1> &second) {
+    if (second.get_denominator() == 1) {
+        return (first > second.get_numerator());
+    } else {
+        return (first * second.get_denominator() > second.get_numerator());
+    }
+}
+
+template<typename T1>
+inline bool operator>(const Fraction<T1> &first, const Fraction<T1> &second) {
+    if (first.get_denominator() == second.get_denominator()) {
+        return first.get_numerator() > second.get_numerator();
+    } else {
+        return (first.get_numerator() * second.get_denominator()) >
+               (second.get_numerator() * first.get_denominator());
+    }
+}
+
+// Less than
+template<typename T1>
+inline bool operator<(const Fraction<T1> &second, const T1 first) {
+    if (second.get_denominator() == 1) {
+        return (second.get_numerator() < first);
+    } else {
+        return (second.get_numerator() < first * second.get_denominator());
+    }
+}
+
+template<typename T1>
+inline bool operator<(const T1 first, const Fraction<T1> &second) {
+    if (second.get_denominator() == 1) {
+        return (first < second.get_numerator());
+    } else {
+        return (first * second.get_denominator() < second.get_numerator());
+    }
+}
+
+template<typename T1>
+inline bool operator<(const Fraction<T1> &first, const Fraction<T1> &second) {
+    if (first.get_denominator() == second.get_denominator()) {
+        return first.get_numerator() < second.get_numerator();
+    } else {
+        return (first.get_numerator() * second.get_denominator()) <
+               (second.get_numerator() * first.get_denominator());
+    }
+}
+
+// Equal to
+template<typename T1>
+inline bool operator==(const Fraction<T1> &second, const T1 first) {
+    if (second.get_denominator() == 1) {
+        return (second.get_numerator() == first);
+    } else {
+        return false;
+    }
+}
+
+template<typename T1>
+inline bool operator==(const T1 first, const Fraction<T1> &second) {
+    if (second.get_denominator() == 1) {
+        return (first == second.get_numerator());
+    } else {
+        return false;
+    }
+}
+
+template<typename T1>
+inline bool operator==(const Fraction<T1> &first, const Fraction<T1> &second) {
+    if (first.get_denominator() == second.get_denominator()) {
+        return first.get_numerator() == second.get_numerator();
+    } else {
+        return false;
+    }
 }
 
 template<typename T1>
