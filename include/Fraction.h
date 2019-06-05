@@ -21,14 +21,18 @@ private:
             if (num1 > num2) num1 -= num2;
             else num2 -= num1;
         }
+        gcd = num1;
         return num1;
     }
 
     /*! @brief Variable for holding numerator of fraction */
-    T1 numerator = 1;
+    T1 numerator;
 
     /*! @brief Variable for holding denominator of fraction */
-    T1 denominator = 1;
+    T1 denominator;
+
+    /*! @brief Variable to store the obtained GCD */
+    T1 gcd = 1;
 
 public:
     T1 get_numerator() const { return numerator; }
@@ -45,6 +49,8 @@ public:
      * @param num2 being the denominator
      */
     explicit Fraction(T1 num1 = 1, T1 num2 = 1);
+
+    T1 get_gcd() { return gcd; }
 
     /*!
      * @brief Operator overload for casting the fraction into int data type
