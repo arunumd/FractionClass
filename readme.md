@@ -1,0 +1,2 @@
+[Build Status](https://travis-ci.org/arunumd/FractionClass.svg?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/arunumd/FractionClass/badge.svg?branch=master)](https://coveralls.io/github/arunumd/FractionClass?branch=master)
