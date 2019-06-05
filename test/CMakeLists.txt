@@ -5,6 +5,7 @@ add_executable(
     main.cpp
     additiontests.cpp
     subtractiontests.cpp
+    multiplicationtests.cpp
 )
 
 target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
