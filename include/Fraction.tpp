@@ -11,6 +11,8 @@ Fraction<T1>::Fraction(T1 num1, T1 num2) {
         denominator = 1;
     } else {
         T1 sign = 1;
+        if(num1 < 0 && num2 < 0) {}
+        else {
         if (num1 < 0) {
             sign = -1;
             num1 *= -1;
@@ -18,6 +20,7 @@ Fraction<T1>::Fraction(T1 num1, T1 num2) {
         if (num2 < 0) {
             sign = -1;
             num2 *= -1;
+            }
         }
         T1 dummy = GCD(num1, num2);
         numerator = num1 / dummy * sign;
