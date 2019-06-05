@@ -8,7 +8,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake)
 option(COVERAGE "Generate Coverage Data" OFF)
 
 if (COVERAGE)
-    include(CodeCoverage)
+    include(CodeCoverage.cmake)
     set(LCOV_REMOVE_EXTRA "'vendor/*'")
     setup_target_for_coverage(code_coverage test/cpp-test coverage)
     set(COVERAGE_SRCS app/main.cpp include/Fraction.tpp include/Fraction.h)
