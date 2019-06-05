@@ -11,7 +11,10 @@ Fraction<T1>::Fraction(T1 num1, T1 num2) {
         denominator = 1;
     } else {
         T1 sign = 1;
-        if(num1 < 0 && num2 < 0) {}
+        if(num1 < 0 && num2 < 0) {
+        num1 *= -1;
+        num2 *= -1;
+        }
         else {
         if (num1 < 0) {
             sign = -1;
