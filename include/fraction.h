@@ -614,7 +614,7 @@ inline bool operator!=(const Fraction<T1> &first, const Fraction<T1> &second) {
  * @return Output stream object with the inserted fraction
  */
 template<typename T1>
-std::ostream &operator<<(std::ostream &strm, const Fraction<T1> &a) {
+inline std::ostream &operator<<(std::ostream &strm, const Fraction<T1> &a) {
     if (a.get_denominator() == 1) {
         strm << a.get_numerator();
     } else {
