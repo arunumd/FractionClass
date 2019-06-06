@@ -13,7 +13,7 @@ using Euclid's GCD algorithm. The algorithm only holds for regular fractions wit
 inequality. CMake is used as build system and Google Test is used for Unit Testing. The code build coverage is done using Travis and Coveralls.
 
 ## Doxygen Documentation
-In order to view the doxygen documentation for the project in a browser, please open the file named `*index.html*` found in `*/docs/html*` location
+In order to view the doxygen documentation for the project in a browser, please open the file named `index.html` found in `/docs/html` location
 
 ## Project Build and Run Instructions
 In order to build and run the project, copy paste the below commands in a new terminal :
