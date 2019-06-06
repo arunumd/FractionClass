@@ -153,3 +153,39 @@ TEST(EqualityTest, FractionEqual4) {
     Fraction<int> b(20, 10);
     EXPECT_TRUE(a == b);
 }
+
+/*!
+ *  @brief Inequality test for a fraction and a constant of types int
+ */
+TEST(InequalityTest, FractionInequal1) {
+    Fraction<int> a(20, 4);
+    int b{2};
+    EXPECT_TRUE(a != b);
+}
+
+/*!
+ *  @brief Inequality test for a fraction and a constant of types int
+ */
+TEST(InequalityTest, FractionInequal2) {
+    Fraction<int> a(20, 10);
+    int b{2};
+    EXPECT_FALSE(a != b);
+}
+
+/*!
+ *  @brief Inequality test for a constant and a fraction of types int
+ */
+TEST(InequalityTest, FractionInequal3) {
+    int a{2};
+    Fraction<int> b(20, 4);
+    EXPECT_TRUE(a != b);
+}
+
+/*!
+ *  @brief Inequality test for a constant and a fraction of types int
+ */
+TEST(InequalityTest, FractionInequal4) {
+    int a{2};
+    Fraction<int> b(20, 10);
+    EXPECT_FALSE(a != b);
+}
