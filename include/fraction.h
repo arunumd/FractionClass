@@ -66,11 +66,6 @@ public:
      */
     explicit Fraction(T1 num1 = 1, T1 num2 = 1);
 
-    /*! @brief Simple getter function to fetch the gcd
-     *  @return gcd based on Euclid's algorithm
-     * */
-    T1 get_gcd() { return gcd; }
-
     /*!
      * @brief Copy constructor for Fraction class
      * @param f being the input object to be copied
