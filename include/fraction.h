@@ -561,6 +561,57 @@ inline bool operator==(const Fraction<T1> &first, const Fraction<T1> &second) {
 }
 
 /*!
+ * @brief Operator overload for inequality test between a fraction and a constant
+ * @tparam T1 Data type for input number passed as template argument
+ * @param second being the LHS fraction
+ * @param first being the RHS constant
+ * @return true if LHS is not equal to RHS
+ * @return false if LHS is equal to RHS
+ */
+template<typename T1>
+inline bool operator!=(const Fraction<T1> &second, const T1 first) {
+    if (second.get_denominator() == 1) {
+        return (second.get_numerator() != first);
+    } else {
+        return true;
+    }
+}
+
+/*!
+ * @brief Operator overload for inequality test between a constant and a fraction
+ * @tparam T1 Data type for input number passed as template argument
+ * @param second being the LHS constant
+ * @param first being the RHS fraction
+ * @return true if LHS is not equal to RHS
+ * @return false if LHS is equal to RHS
+ */
+template<typename T1>
+inline bool operator!=(const T1 first, const Fraction<T1> &second) {
+    if (second.get_denominator() == 1) {
+        return (first != second.get_numerator());
+    } else {
+        return true;
+    }
+}
+
+/*!
+ * @brief Operator overload for inequality test between two fractions
+ * @tparam T1 Data type for input number passed as template argument
+ * @param second being the LHS fraction
+ * @param first being the RHS fraction
+ * @return true if LHS is not equal to RHS
+ * @return false if LHS is equal to RHS
+ */
+template<typename T1>
+inline bool operator!=(const Fraction<T1> &first, const Fraction<T1> &second) {
+    if (first.get_denominator() == second.get_denominator()) {
+        return first.get_numerator() != second.get_numerator();
+    } else {
+        return true;
+    }
+}
+
+/*!
  * @brief Operator overload for printing the fraction to output stream
  * @tparam T1 Data type for input number passed as template argument
  * @param strm Output stream object
