@@ -1,0 +1,186 @@
+\hypertarget{class_fraction}{}\section{Fraction$<$ T1 $>$ Class Template Reference}
+\label{class_fraction}\index{Fraction$<$ T1 $>$@{Fraction$<$ T1 $>$}}
+
+
+\mbox{\hyperlink{class_fraction}{Fraction}} class which stores the numerator and denominator of an input fraction inside a Fraction$<$\+T1$>$ object after reduction of gcd from both the numerator and denominator using Euclid\textquotesingle{}s algorithm.  
+
+
+
+
+{\ttfamily \#include $<$fraction.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fraction_a9e76a64248f65036ce4c42e11b97f668}\label{class_fraction_a9e76a64248f65036ce4c42e11b97f668}} 
+T1 \mbox{\hyperlink{class_fraction_a9e76a64248f65036ce4c42e11b97f668}{get\+\_\+numerator}} () const
+\begin{DoxyCompactList}\small\item\em Getter function for fetching the numerator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fraction_acaa8644d13c8aca0608a7480380f0f26}\label{class_fraction_acaa8644d13c8aca0608a7480380f0f26}} 
+T1 \mbox{\hyperlink{class_fraction_acaa8644d13c8aca0608a7480380f0f26}{get\+\_\+denominator}} () const
+\begin{DoxyCompactList}\small\item\em Getter function for fetching the denominator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fraction_a666b7a3b88063964ce1d9330b85a65ac}{Fraction}} (T1 num1=1, T1 num2=1)
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_fraction}{Fraction}} class. The constructor accepts the numerator and denominator from input and uses the G\+CD function (Euclid\textquotesingle{}s Algorithm) to evaluate for the G\+CD. Later the constructor packages the given inputs (numerator \& denominator) into the lowest possible fraction based on the G\+CD which is obtained. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fraction_af8e21ec54ed1bbbb929cdad09b8d67e1}{Fraction}} (const \mbox{\hyperlink{class_fraction}{Fraction}} \&f)
+\begin{DoxyCompactList}\small\item\em Copy constructor for \mbox{\hyperlink{class_fraction}{Fraction}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fraction}{Fraction}} \& \mbox{\hyperlink{class_fraction_aa1f6ad93978f3dc5b403a568070099c6}{operator=}} (\mbox{\hyperlink{class_fraction}{Fraction}} other)
+\begin{DoxyCompactList}\small\item\em Assignment operator for assignment of an object to another object. The assignment is made as move assignment using std\+::swap. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fraction_a26e703ee017465f51b0327a51936dc81}{operator int}} ()
+\begin{DoxyCompactList}\small\item\em Operator overload for casting the fraction into int data type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fraction_a8bdec9c82794a4f0ccaab7f8ba0a29b7}{operator float}} ()
+\begin{DoxyCompactList}\small\item\em Operator overload for casting the fraction into float data type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fraction_ae5eacb8f904e3f988413b2a6985fe500}{operator double}} ()
+\begin{DoxyCompactList}\small\item\em Operator overload for casting the fraction into double data type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fraction_ae0f4610e5b81f7a1cd2e1c28aa239388}{operator long}} ()
+\begin{DoxyCompactList}\small\item\em Operator overload for casting the fraction into long data type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fraction_acd3b6a968bac3ef1cebbc64536be3a41}{operator long long}} ()
+\begin{DoxyCompactList}\small\item\em Operator overload for casting the fraction into long long data type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fraction_ae8c95b1af65ddc54b41b72118ebe05ec}\label{class_fraction_ae8c95b1af65ddc54b41b72118ebe05ec}} 
+\mbox{\hyperlink{class_fraction_ae8c95b1af65ddc54b41b72118ebe05ec}{$\sim$\+Fraction}} ()=default
+\begin{DoxyCompactList}\small\item\em Default trivial destructor for the \mbox{\hyperlink{class_fraction}{Fraction}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T1$>$\newline
+class Fraction$<$ T1 $>$}
+
+\mbox{\hyperlink{class_fraction}{Fraction}} class which stores the numerator and denominator of an input fraction inside a Fraction$<$\+T1$>$ object after reduction of gcd from both the numerator and denominator using Euclid\textquotesingle{}s algorithm. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Input data type for type of number being passed to the \mbox{\hyperlink{class_fraction}{Fraction}} class \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fraction_a666b7a3b88063964ce1d9330b85a65ac}\label{class_fraction_a666b7a3b88063964ce1d9330b85a65ac}} 
+\index{Fraction$<$ T1 $>$@{Fraction$<$ T1 $>$}!Fraction@{Fraction}}
+\index{Fraction@{Fraction}!Fraction$<$ T1 $>$@{Fraction$<$ T1 $>$}}
+\subsubsection{\texorpdfstring{Fraction()}{Fraction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T1$>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$\+::\mbox{\hyperlink{class_fraction}{Fraction}} (\begin{DoxyParamCaption}\item[{T1}]{num1 = {\ttfamily 1},  }\item[{T1}]{num2 = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Default constructor for the \mbox{\hyperlink{class_fraction}{Fraction}} class. The constructor accepts the numerator and denominator from input and uses the G\+CD function (Euclid\textquotesingle{}s Algorithm) to evaluate for the G\+CD. Later the constructor packages the given inputs (numerator \& denominator) into the lowest possible fraction based on the G\+CD which is obtained. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num1} & being the numerator \\
+\hline
+{\em num2} & being the denominator \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fraction_af8e21ec54ed1bbbb929cdad09b8d67e1}\label{class_fraction_af8e21ec54ed1bbbb929cdad09b8d67e1}} 
+\index{Fraction$<$ T1 $>$@{Fraction$<$ T1 $>$}!Fraction@{Fraction}}
+\index{Fraction@{Fraction}!Fraction$<$ T1 $>$@{Fraction$<$ T1 $>$}}
+\subsubsection{\texorpdfstring{Fraction()}{Fraction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T1$>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$\+::\mbox{\hyperlink{class_fraction}{Fraction}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{f }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for \mbox{\hyperlink{class_fraction}{Fraction}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & being the input object to be copied \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fraction_ae5eacb8f904e3f988413b2a6985fe500}\label{class_fraction_ae5eacb8f904e3f988413b2a6985fe500}} 
+\index{Fraction$<$ T1 $>$@{Fraction$<$ T1 $>$}!operator double@{operator double}}
+\index{operator double@{operator double}!Fraction$<$ T1 $>$@{Fraction$<$ T1 $>$}}
+\subsubsection{\texorpdfstring{operator double()}{operator double()}}
+{\footnotesize\ttfamily template$<$typename T1$>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$\+::operator double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Operator overload for casting the fraction into double data type. 
+
+\begin{DoxyReturn}{Returns}
+The input fraction after casting into a double data type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fraction_a8bdec9c82794a4f0ccaab7f8ba0a29b7}\label{class_fraction_a8bdec9c82794a4f0ccaab7f8ba0a29b7}} 
+\index{Fraction$<$ T1 $>$@{Fraction$<$ T1 $>$}!operator float@{operator float}}
+\index{operator float@{operator float}!Fraction$<$ T1 $>$@{Fraction$<$ T1 $>$}}
+\subsubsection{\texorpdfstring{operator float()}{operator float()}}
+{\footnotesize\ttfamily template$<$typename T1$>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$\+::operator float (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Operator overload for casting the fraction into float data type. 
+
+\begin{DoxyReturn}{Returns}
+The input fraction after casting into a float data type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fraction_a26e703ee017465f51b0327a51936dc81}\label{class_fraction_a26e703ee017465f51b0327a51936dc81}} 
+\index{Fraction$<$ T1 $>$@{Fraction$<$ T1 $>$}!operator int@{operator int}}
+\index{operator int@{operator int}!Fraction$<$ T1 $>$@{Fraction$<$ T1 $>$}}
+\subsubsection{\texorpdfstring{operator int()}{operator int()}}
+{\footnotesize\ttfamily template$<$typename T1$>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$\+::operator int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Operator overload for casting the fraction into int data type. 
+
+\begin{DoxyReturn}{Returns}
+The input fraction after casting into an int data type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fraction_ae0f4610e5b81f7a1cd2e1c28aa239388}\label{class_fraction_ae0f4610e5b81f7a1cd2e1c28aa239388}} 
+\index{Fraction$<$ T1 $>$@{Fraction$<$ T1 $>$}!operator long@{operator long}}
+\index{operator long@{operator long}!Fraction$<$ T1 $>$@{Fraction$<$ T1 $>$}}
+\subsubsection{\texorpdfstring{operator long()}{operator long()}}
+{\footnotesize\ttfamily template$<$typename T1$>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$\+::operator long (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Operator overload for casting the fraction into long data type. 
+
+\begin{DoxyReturn}{Returns}
+The input fraction after casting into a long data type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fraction_acd3b6a968bac3ef1cebbc64536be3a41}\label{class_fraction_acd3b6a968bac3ef1cebbc64536be3a41}} 
+\index{Fraction$<$ T1 $>$@{Fraction$<$ T1 $>$}!operator long long@{operator long long}}
+\index{operator long long@{operator long long}!Fraction$<$ T1 $>$@{Fraction$<$ T1 $>$}}
+\subsubsection{\texorpdfstring{operator long long()}{operator long long()}}
+{\footnotesize\ttfamily template$<$typename T1$>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$\+::operator long long (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Operator overload for casting the fraction into long long data type. 
+
+\begin{DoxyReturn}{Returns}
+The input fraction after casting into a long long data type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fraction_aa1f6ad93978f3dc5b403a568070099c6}\label{class_fraction_aa1f6ad93978f3dc5b403a568070099c6}} 
+\index{Fraction$<$ T1 $>$@{Fraction$<$ T1 $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Fraction$<$ T1 $>$@{Fraction$<$ T1 $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T1$>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}\& \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$}]{other }\end{DoxyParamCaption})}
+
+
+
+Assignment operator for assignment of an object to another object. The assignment is made as move assignment using std\+::swap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & being the object to be assigned to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New object to which it is assigned to 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/arunk/\+C\+Lion\+Projects/\+Fraction/include/\mbox{\hyperlink{fraction_8h}{fraction.\+h}}\end{DoxyCompactItemize}

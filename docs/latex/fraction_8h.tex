@@ -1,0 +1,978 @@
+\hypertarget{fraction_8h}{}\section{C\+:/\+Users/arunk/\+C\+Lion\+Projects/\+Fraction/include/fraction.h File Reference}
+\label{fraction_8h}\index{C:/Users/arunk/CLionProjects/Fraction/include/fraction.h@{C:/Users/arunk/CLionProjects/Fraction/include/fraction.h}}
+
+
+This file oontains the header file declarations for the fraction class. The class accepts two inputs (numerator and denominator) and automatically simplifies the received inputs based on Euclid\textquotesingle{}s algorithm. later the simplified numerator and denominator are stored in separate variables.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_fraction}{Fraction$<$ T1 $>$}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_fraction}{Fraction}} class which stores the numerator and denominator of an input fraction inside a Fraction$<$\+T1$>$ object after reduction of gcd from both the numerator and denominator using Euclid\textquotesingle{}s algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_a0796c212c7ac1bde82debbe57caab69a}{operator+}} (const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload function for addition of two separate fractions. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_a7acafdbc2f468f3be146b5ca43abb4ce}{operator+=}} (\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for addition assignment of L\+HS and R\+HS to L\+HS. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_a6bd1862b6c5f1c8af81be523d8a101d6}{operator+}} (const T1 \&first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload function for addition of constant and fraction. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_a2759c300898d71a52f3de5d2c2210371}{operator+}} (const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&first, const T1 \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for addition of fraction and constant. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_a685df2095963a15f16007149c0b296fc}{operator-\/}} (const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload function for subtraction of two separate fractions. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_a0b2fee3d8387e603f24e8c276fa271e6}{operator-\/=}} (\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for subtraction assignment of L\+HS and R\+HS to L\+HS. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_aa8d5db61a680d0ba93d3c72d0eb9f422}{operator-\/}} (const T1 \&first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload function for subtraction of constant and fraction. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_a95a2227a4fd9f590cc9e12d8ae7370b1}{operator-\/}} (const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&first, const T1 \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for subtraction of fraction and constant. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_a7d904be9ddc5cdd03b92922d0fb53693}{operator $\ast$}} (const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for multiplication of two fractions. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_a7ebae622c7ac4b4c2198e58107c95c2a}{operator $\ast$=}} (\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for multiplication assignment of two fractions. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_a65ec0232b79930d08cfff08cb80eb0ef}{operator $\ast$}} (const T1 first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for multiplication of a constant and a fraction. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_a0e537edc4cec5192c80024ec66c1602b}{operator $\ast$=}} (T1 first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for multiplication assignment of a constant and a fraction. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_a1043230ae792309545e3aa66e9808b27}{operator $\ast$}} (const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second, const T1 first)
+\begin{DoxyCompactList}\small\item\em Operator overload for multiplication of a fraction and a constant. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_a171412489217e4f1f568a91adaa772ab}{operator $\ast$=}} (const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second, T1 first)
+\begin{DoxyCompactList}\small\item\em Operator overload for multiplication assignment of a fraction and a constant. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_a98466d5761fec96d2d916baebecdddb7}{operator/}} (const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for division of two fractions. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_a243e2cedb23038b72dd24548e900c4ab}{operator/=}} (\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for division assignment of two fractions. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_a72753825d3225bbe3136dcdc3b5db037}{operator/}} (const T1 first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for division of a constant by a fraction. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_a9671c0cc14c2a598d01d799a6ae943ae}{operator/=}} (T1 first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for division assignment of a constant and a fraction. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_afca6fcc0d613199239c2f5bc9f5ff85c}{operator/}} (const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second, const T1 first)
+\begin{DoxyCompactList}\small\item\em Operator overload for division of a fraction by a constant. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \mbox{\hyperlink{fraction_8h_a66dbbdec4819472de2e13d33c0f9e265}{operator/=}} (const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second, const T1 first)
+\begin{DoxyCompactList}\small\item\em Operator overload for division assignment of a fraction by a constant. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\bool \mbox{\hyperlink{fraction_8h_a624277a31d20a772a1bf762e8a9f05aa}{operator$>$}} (const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second, const T1 first)
+\begin{DoxyCompactList}\small\item\em Operator overload for greater than test between fraction and constant. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\bool \mbox{\hyperlink{fraction_8h_a0bea4041323b4b1ed9c3e6fa4f19ee8f}{operator$>$}} (const T1 first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for greater than test between constant and fraction. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\bool \mbox{\hyperlink{fraction_8h_a8f8298030ed0a969fd877c903d1a83d9}{operator$>$}} (const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for greater than test between two fractions. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\bool \mbox{\hyperlink{fraction_8h_a0abe0764065756b102420e29077d6b14}{operator$<$}} (const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second, const T1 first)
+\begin{DoxyCompactList}\small\item\em Operator overload for lesser than test between fraction and constant. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\bool \mbox{\hyperlink{fraction_8h_ace6bfec1880169c5fec310eddfbf7f24}{operator$<$}} (const T1 first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for lesser than test between constant and fraction. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\bool \mbox{\hyperlink{fraction_8h_a6d1ce59df3cd8e639c56dc7438c3cbaf}{operator$<$}} (const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for lesser than test between two fractions. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\bool \mbox{\hyperlink{fraction_8h_a20118dea23815357bfc81f180e7367c5}{operator==}} (const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second, const T1 first)
+\begin{DoxyCompactList}\small\item\em Operator overload for equality test between a fraction and a constant. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\bool \mbox{\hyperlink{fraction_8h_a2b3f527527e9ad98710e0b60b5fdf1e2}{operator==}} (const T1 first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for equality test between a constant and a fraction. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\bool \mbox{\hyperlink{fraction_8h_ae5d6be81244e9555edcd2b4fa164fd01}{operator==}} (const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for equality test between two fractions. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\bool \mbox{\hyperlink{fraction_8h_a83b9308e3617db3418d3a45123224e7c}{operator!=}} (const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second, const T1 first)
+\begin{DoxyCompactList}\small\item\em Operator overload for inequality test between a fraction and a constant. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\bool \mbox{\hyperlink{fraction_8h_ab2a031a4bd5d203a943432f22a14941a}{operator!=}} (const T1 first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for inequality test between a constant and a fraction. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\bool \mbox{\hyperlink{fraction_8h_a6095e684742b69b23caae998452daeb7}{operator!=}} (const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&first, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Operator overload for inequality test between two fractions. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 $>$ }\\std\+::ostream \& \mbox{\hyperlink{fraction_8h_ac9222b21bc18383c2acb2f44de585460}{operator$<$$<$}} (std\+::ostream \&strm, const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&a)
+\begin{DoxyCompactList}\small\item\em Operator overload for printing the fraction to output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file oontains the header file declarations for the fraction class. The class accepts two inputs (numerator and denominator) and automatically simplifies the received inputs based on Euclid\textquotesingle{}s algorithm. later the simplified numerator and denominator are stored in separate variables. 
+
+\begin{DoxyAuthor}{Author}
+Arun Kumar Devarajulu @license This project is released under the M\+IT License. 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 28, 2019 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{fraction_8h_a7d904be9ddc5cdd03b92922d0fb53693}\label{fraction_8h_a7d904be9ddc5cdd03b92922d0fb53693}} 
+\index{fraction.h@{fraction.h}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator $\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for multiplication of two fractions. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & being the L\+HS fraction \\
+\hline
+{\em second} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Product of L\+HS and R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a65ec0232b79930d08cfff08cb80eb0ef}\label{fraction_8h_a65ec0232b79930d08cfff08cb80eb0ef}} 
+\index{fraction.h@{fraction.h}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator $\ast$ (\begin{DoxyParamCaption}\item[{const T1}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for multiplication of a constant and a fraction. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & being the constant \\
+\hline
+{\em second} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Product of L\+HS and R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a1043230ae792309545e3aa66e9808b27}\label{fraction_8h_a1043230ae792309545e3aa66e9808b27}} 
+\index{fraction.h@{fraction.h}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator $\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second,  }\item[{const T1}]{first }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for multiplication of a fraction and a constant. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em second} & being the L\+HS fraction \\
+\hline
+{\em first} & being the constant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Product of L\+HS and R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a7ebae622c7ac4b4c2198e58107c95c2a}\label{fraction_8h_a7ebae622c7ac4b4c2198e58107c95c2a}} 
+\index{fraction.h@{fraction.h}!operator $\ast$=@{operator $\ast$=}}
+\index{operator $\ast$=@{operator $\ast$=}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator $\ast$=()}{operator *=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator $\ast$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for multiplication assignment of two fractions. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & being the L\+HS fraction \\
+\hline
+{\em second} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\+HS as the product of L\+HS and R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a0e537edc4cec5192c80024ec66c1602b}\label{fraction_8h_a0e537edc4cec5192c80024ec66c1602b}} 
+\index{fraction.h@{fraction.h}!operator $\ast$=@{operator $\ast$=}}
+\index{operator $\ast$=@{operator $\ast$=}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator $\ast$=()}{operator *=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator $\ast$= (\begin{DoxyParamCaption}\item[{T1}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for multiplication assignment of a constant and a fraction. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & being the constant \\
+\hline
+{\em second} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\+HS as the product of L\+HS and R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a171412489217e4f1f568a91adaa772ab}\label{fraction_8h_a171412489217e4f1f568a91adaa772ab}} 
+\index{fraction.h@{fraction.h}!operator $\ast$=@{operator $\ast$=}}
+\index{operator $\ast$=@{operator $\ast$=}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator $\ast$=()}{operator *=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator $\ast$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second,  }\item[{T1}]{first }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for multiplication assignment of a fraction and a constant. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em second} & being the L\+HS fraction \\
+\hline
+{\em first} & being the constant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\+HS as the product of L\+HS and R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a83b9308e3617db3418d3a45123224e7c}\label{fraction_8h_a83b9308e3617db3418d3a45123224e7c}} 
+\index{fraction.h@{fraction.h}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+bool operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second,  }\item[{const T1}]{first }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for inequality test between a fraction and a constant. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em second} & being the L\+HS fraction \\
+\hline
+{\em first} & being the R\+HS constant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if L\+HS is not equal to R\+HS 
+
+false if L\+HS is equal to R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_ab2a031a4bd5d203a943432f22a14941a}\label{fraction_8h_ab2a031a4bd5d203a943432f22a14941a}} 
+\index{fraction.h@{fraction.h}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+bool operator!= (\begin{DoxyParamCaption}\item[{const T1}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for inequality test between a constant and a fraction. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em second} & being the L\+HS constant \\
+\hline
+{\em first} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if L\+HS is not equal to R\+HS 
+
+false if L\+HS is equal to R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a6095e684742b69b23caae998452daeb7}\label{fraction_8h_a6095e684742b69b23caae998452daeb7}} 
+\index{fraction.h@{fraction.h}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+bool operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for inequality test between two fractions. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em second} & being the L\+HS fraction \\
+\hline
+{\em first} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if L\+HS is not equal to R\+HS 
+
+false if L\+HS is equal to R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a0796c212c7ac1bde82debbe57caab69a}\label{fraction_8h_a0796c212c7ac1bde82debbe57caab69a}} 
+\index{fraction.h@{fraction.h}!operator+@{operator+}}
+\index{operator+@{operator+}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload function for addition of two separate fractions. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & being the L\+HS fraction \\
+\hline
+{\em second} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sum of L\+HS and R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a6bd1862b6c5f1c8af81be523d8a101d6}\label{fraction_8h_a6bd1862b6c5f1c8af81be523d8a101d6}} 
+\index{fraction.h@{fraction.h}!operator+@{operator+}}
+\index{operator+@{operator+}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator+ (\begin{DoxyParamCaption}\item[{const T1 \&}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload function for addition of constant and fraction. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & being the L\+HS constant \\
+\hline
+{\em second} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sum of L\+HS and R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a2759c300898d71a52f3de5d2c2210371}\label{fraction_8h_a2759c300898d71a52f3de5d2c2210371}} 
+\index{fraction.h@{fraction.h}!operator+@{operator+}}
+\index{operator+@{operator+}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{first,  }\item[{const T1 \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for addition of fraction and constant. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & being the L\+HS fraction \\
+\hline
+{\em second} & being the R\+HS constant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\+HS as the sum of L\+HS and R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a7acafdbc2f468f3be146b5ca43abb4ce}\label{fraction_8h_a7acafdbc2f468f3be146b5ca43abb4ce}} 
+\index{fraction.h@{fraction.h}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator+= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for addition assignment of L\+HS and R\+HS to L\+HS. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & being the L\+HS fraction \\
+\hline
+{\em second} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\+HS as the sum of L\+HS and R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a685df2095963a15f16007149c0b296fc}\label{fraction_8h_a685df2095963a15f16007149c0b296fc}} 
+\index{fraction.h@{fraction.h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload function for subtraction of two separate fractions. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & being the L\+HS fraction \\
+\hline
+{\em second} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Difference of L\+HS and R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_aa8d5db61a680d0ba93d3c72d0eb9f422}\label{fraction_8h_aa8d5db61a680d0ba93d3c72d0eb9f422}} 
+\index{fraction.h@{fraction.h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator-\/ (\begin{DoxyParamCaption}\item[{const T1 \&}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload function for subtraction of constant and fraction. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & being the L\+HS constant \\
+\hline
+{\em second} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Difference of L\+HS and R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a95a2227a4fd9f590cc9e12d8ae7370b1}\label{fraction_8h_a95a2227a4fd9f590cc9e12d8ae7370b1}} 
+\index{fraction.h@{fraction.h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{first,  }\item[{const T1 \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for subtraction of fraction and constant. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & being the L\+HS fraction \\
+\hline
+{\em second} & being the R\+HS constant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Difference of L\+HS and R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a0b2fee3d8387e603f24e8c276fa271e6}\label{fraction_8h_a0b2fee3d8387e603f24e8c276fa271e6}} 
+\index{fraction.h@{fraction.h}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator-\/= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for subtraction assignment of L\+HS and R\+HS to L\+HS. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & being the L\+HS fraction \\
+\hline
+{\em second} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\+HS as the difference of L\+HS and R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a98466d5761fec96d2d916baebecdddb7}\label{fraction_8h_a98466d5761fec96d2d916baebecdddb7}} 
+\index{fraction.h@{fraction.h}!operator/@{operator/}}
+\index{operator/@{operator/}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for division of two fractions. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & being the L\+HS fraction \\
+\hline
+{\em second} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Division of L\+HS by R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a72753825d3225bbe3136dcdc3b5db037}\label{fraction_8h_a72753825d3225bbe3136dcdc3b5db037}} 
+\index{fraction.h@{fraction.h}!operator/@{operator/}}
+\index{operator/@{operator/}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator/ (\begin{DoxyParamCaption}\item[{const T1}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for division of a constant by a fraction. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & being the L\+HS constant \\
+\hline
+{\em second} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Division of L\+HS by R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_afca6fcc0d613199239c2f5bc9f5ff85c}\label{fraction_8h_afca6fcc0d613199239c2f5bc9f5ff85c}} 
+\index{fraction.h@{fraction.h}!operator/@{operator/}}
+\index{operator/@{operator/}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second,  }\item[{const T1}]{first }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for division of a fraction by a constant. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em second} & being the L\+HS fraction \\
+\hline
+{\em first} & being the R\+HS constant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Division of L\+HS by R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a243e2cedb23038b72dd24548e900c4ab}\label{fraction_8h_a243e2cedb23038b72dd24548e900c4ab}} 
+\index{fraction.h@{fraction.h}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator/= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for division assignment of two fractions. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & being the L\+HS fraction \\
+\hline
+{\em second} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\+HS as division of L\+HS by R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a9671c0cc14c2a598d01d799a6ae943ae}\label{fraction_8h_a9671c0cc14c2a598d01d799a6ae943ae}} 
+\index{fraction.h@{fraction.h}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator/= (\begin{DoxyParamCaption}\item[{T1}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for division assignment of a constant and a fraction. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & being the L\+HS constant \\
+\hline
+{\em second} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\+HS as the division of L\+HS by R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a66dbbdec4819472de2e13d33c0f9e265}\label{fraction_8h_a66dbbdec4819472de2e13d33c0f9e265}} 
+\index{fraction.h@{fraction.h}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{class_fraction}{Fraction}}$<$T1$>$ operator/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second,  }\item[{const T1}]{first }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for division assignment of a fraction by a constant. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em second} & being the L\+HS fraction \\
+\hline
+{\em first} & being the R\+HS constant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\+HS as the division of L\+HS by R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a0abe0764065756b102420e29077d6b14}\label{fraction_8h_a0abe0764065756b102420e29077d6b14}} 
+\index{fraction.h@{fraction.h}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+bool operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second,  }\item[{const T1}]{first }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for lesser than test between fraction and constant. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em second} & being the L\+HS fraction \\
+\hline
+{\em first} & being the R\+HS constant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if L\+HS is lesser than R\+HS 
+
+false if L\+HS greater than R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_ace6bfec1880169c5fec310eddfbf7f24}\label{fraction_8h_ace6bfec1880169c5fec310eddfbf7f24}} 
+\index{fraction.h@{fraction.h}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+bool operator$<$ (\begin{DoxyParamCaption}\item[{const T1}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for lesser than test between constant and fraction. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em second} & being the L\+HS constant \\
+\hline
+{\em first} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if L\+HS is lesser than R\+HS 
+
+false if L\+HS greater than R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a6d1ce59df3cd8e639c56dc7438c3cbaf}\label{fraction_8h_a6d1ce59df3cd8e639c56dc7438c3cbaf}} 
+\index{fraction.h@{fraction.h}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+bool operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for lesser than test between two fractions. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em second} & being the L\+HS fraction \\
+\hline
+{\em first} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if L\+HS is greater than R\+HS 
+
+false if L\+HS lesser than R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_ac9222b21bc18383c2acb2f44de585460}\label{fraction_8h_ac9222b21bc18383c2acb2f44de585460}} 
+\index{fraction.h@{fraction.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{strm,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for printing the fraction to output stream. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em strm} & Output stream object \\
+\hline
+{\em a} & \mbox{\hyperlink{class_fraction}{Fraction}} of interest \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Output stream object with the inserted fraction 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a20118dea23815357bfc81f180e7367c5}\label{fraction_8h_a20118dea23815357bfc81f180e7367c5}} 
+\index{fraction.h@{fraction.h}!operator==@{operator==}}
+\index{operator==@{operator==}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second,  }\item[{const T1}]{first }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for equality test between a fraction and a constant. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em second} & being the L\+HS fraction \\
+\hline
+{\em first} & being the R\+HS constant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if L\+HS is equal to R\+HS 
+
+false if L\+HS is not equal to R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a2b3f527527e9ad98710e0b60b5fdf1e2}\label{fraction_8h_a2b3f527527e9ad98710e0b60b5fdf1e2}} 
+\index{fraction.h@{fraction.h}!operator==@{operator==}}
+\index{operator==@{operator==}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+bool operator== (\begin{DoxyParamCaption}\item[{const T1}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for equality test between a constant and a fraction. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em second} & being the L\+HS constant \\
+\hline
+{\em first} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if L\+HS is equal to R\+HS 
+
+false if L\+HS is not equal to R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_ae5d6be81244e9555edcd2b4fa164fd01}\label{fraction_8h_ae5d6be81244e9555edcd2b4fa164fd01}} 
+\index{fraction.h@{fraction.h}!operator==@{operator==}}
+\index{operator==@{operator==}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for equality test between two fractions. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em second} & being the L\+HS fraction \\
+\hline
+{\em first} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if L\+HS is equal to R\+HS 
+
+false if L\+HS is not equal to R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a624277a31d20a772a1bf762e8a9f05aa}\label{fraction_8h_a624277a31d20a772a1bf762e8a9f05aa}} 
+\index{fraction.h@{fraction.h}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+bool operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second,  }\item[{const T1}]{first }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for greater than test between fraction and constant. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em second} & being the L\+HS fraction \\
+\hline
+{\em first} & being the R\+HS constant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if L\+HS is greater than R\+HS 
+
+false if L\+HS lesser than R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a0bea4041323b4b1ed9c3e6fa4f19ee8f}\label{fraction_8h_a0bea4041323b4b1ed9c3e6fa4f19ee8f}} 
+\index{fraction.h@{fraction.h}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+bool operator$>$ (\begin{DoxyParamCaption}\item[{const T1}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for greater than test between constant and fraction. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em second} & being the L\+HS constant \\
+\hline
+{\em first} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if L\+HS is greater than R\+HS 
+
+false if L\+HS lesser than R\+HS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fraction_8h_a8f8298030ed0a969fd877c903d1a83d9}\label{fraction_8h_a8f8298030ed0a969fd877c903d1a83d9}} 
+\index{fraction.h@{fraction.h}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!fraction.h@{fraction.h}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+bool operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{first,  }\item[{const \mbox{\hyperlink{class_fraction}{Fraction}}$<$ T1 $>$ \&}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator overload for greater than test between two fractions. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Data type for input number passed as template argument \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em second} & being the L\+HS fraction \\
+\hline
+{\em first} & being the R\+HS fraction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if L\+HS is greater than R\+HS 
+
+false if L\+HS lesser than R\+HS 
+\end{DoxyReturn}
