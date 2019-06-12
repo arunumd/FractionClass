@@ -2,6 +2,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/arunumd/FractionClass/badge.svg?branch=master)](https://coveralls.io/github/arunumd/FractionClass?branch=master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/arunumd/FractionClass.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/arunumd/FractionClass/alerts/)
+[![Language grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/arunumd/FractionClass.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/arunumd/FractionClass/context:cpp)
 ---
 # Fraction Class - Template based Implementation in C++11/ 14 along with Google Test Unit testing
 
